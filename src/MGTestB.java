@@ -17,6 +17,7 @@ public class MGTestB {
         System.out.print(something.add(1,2));
         System.out.print(something.add(1,2,3,4));
         System.out.print(something.add());
+        System.out.println(something.add(1,2,3,3,5,6,7,8,9));
 
     }
 }
