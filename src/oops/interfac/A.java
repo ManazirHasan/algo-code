@@ -1,4 +1,4 @@
-package inter;
+package oops.interfac;
 
 import java.io.FileNotFoundException;
 

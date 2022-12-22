@@ -1,4 +1,4 @@
-package inter;
+package oops.interfac;
 
 
 @FunctionalInterface
