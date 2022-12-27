@@ -1,8 +1,6 @@
-package collec;
+package collection;
 
 import java.util.*;
-
-import static java.util.Comparator.naturalOrder;
 
 public class CollectionTest {
 

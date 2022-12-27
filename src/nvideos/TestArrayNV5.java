@@ -1,10 +1,6 @@
-package algo.arry;
+package nvideos;
 
-import java.util.PriorityQueue;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class TestArrayNV5 {
 

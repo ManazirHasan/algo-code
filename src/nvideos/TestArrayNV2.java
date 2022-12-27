@@ -1,4 +1,4 @@
-package algo.arry;
+package nvideos;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package algo;
+package algo.array;
 
 public class MArkerKlass {
     public static void main(String[] args) {

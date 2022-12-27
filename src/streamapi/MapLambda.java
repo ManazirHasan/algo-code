@@ -1,4 +1,4 @@
-package algo;
+package streamapi;
 
 import java.util.HashMap;
 import java.util.stream.Collectors;

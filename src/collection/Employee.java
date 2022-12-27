@@ -1,4 +1,4 @@
-package collec;
+package collection;
 
 
 public class Employee {//implements Comparable<Employee> {

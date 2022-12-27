@@ -1,6 +1,4 @@
-package algo;
-
-import static java.awt.PageAttributes.MediaType.B1;
+package algo.array;
 
 public class GenericKlass {
 

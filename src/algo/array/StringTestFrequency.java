@@ -1,4 +1,4 @@
-package algo;
+package algo.array;
 
 import java.util.HashMap;
 import java.util.Map;

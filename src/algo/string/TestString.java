@@ -19,7 +19,6 @@ public class TestString {
             callSwap(str,i,j);
             reverse(str, ++i, --j);
         }
-
     }
 
     private static void callSwap(char[] str, int i, int j) {

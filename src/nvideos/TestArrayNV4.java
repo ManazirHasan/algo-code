@@ -1,4 +1,4 @@
-package algo.arry;
+package nvideos;
 
 public class TestArrayNV4 {
 
