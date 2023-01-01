@@ -5,7 +5,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-public class LambdaKlass implements I1,I2 {
+public class LambdaExpress implements I1,I2 {
 
     public static void main(String[] args) {
         System.out.println("----Hello ---");

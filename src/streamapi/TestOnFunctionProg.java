@@ -7,6 +7,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
 import java.util.function.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -14,6 +16,8 @@ import java.util.stream.Stream;
 public class TestOnFunctionProg {
 
     public static void main(String[] args) {
+
+
         Supplier<String> x = () -> "Manazir";
         System.out.println(x.get());
 
@@ -80,6 +84,14 @@ interface KuchBi {
     void m();
     // void n();
 
+}
+
+class Test implements Callable{
+
+    @Override
+    public Object call() throws Exception {
+        return null;
+    }
 }
 
 

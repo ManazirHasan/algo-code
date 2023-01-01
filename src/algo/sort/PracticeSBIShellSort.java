@@ -3,7 +3,7 @@ package algo.sort;
 public class PracticeSBIShellSort {
     //bubble,selection,insertion
     //quick,merge,heap
-    //count sort, redix or bucket/bin sort, shell sort
+    //count sort, redix or bucket/bin sort, shell sort , Comp sort
     public static void main(String[] args) {
         System.out.println("------------this is sorting--------");
 

@@ -3,7 +3,7 @@ package streamapi;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Test {
+public class MaxValueInMap {
     //Get (K,max(v)) value from from Map
     public static void main(String[] args) {
         System.out.println("------------");
