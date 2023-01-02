@@ -16,8 +16,6 @@ public class PracticeSBIShellSort {
         //insertsort
     }
 
-
-
     private static void bubblesort(int[] arry) {
         for (int i=arry.length-1;i>0;i--){
             for (int j=0;j<i;j++){
