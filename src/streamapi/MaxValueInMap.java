@@ -38,10 +38,11 @@ public class MaxValueInMap {
         }
         System.out.println(keyOfMAx + "=" + maxValueInt);
         */
-        map.entrySet()
+        System.out.println(map.entrySet()
                 .stream()
                 .max((Map.Entry<String, Integer> e1, Map.Entry<String, Integer> e2) -> e1.getValue() - e2.getValue())
-                .get();
+                .get());
+        //map.entrySet().stream().max((Map.Entry<String,Integer> e1, Map.Entry<String,Integer> e2) -> e1.getValue()-e2.getValue()).get();
     }
 }
 

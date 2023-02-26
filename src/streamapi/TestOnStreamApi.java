@@ -13,12 +13,13 @@ public class TestOnStreamApi {
     }
     private static void groupByOnDepartment(List<Emp> empList) {
         Map<String, Set<Long>> salaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.mapping(Emp::getSalary, toSet())));
-        System.out.println(salaryOnEachDept);
+        //System.out.println(salaryOnEachDept);
         Map<String, Emp> maxSalaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingLong(Emp::getSalary)),Optional::get)));
-        System.out.println(maxSalaryOnEachDept);
+        //System.out.println(maxSalaryOnEachDept);
         Map<String, Long> sumOfSalaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.summingLong(Emp::getSalary)));
         Map<String, Long> countOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.counting()));
         Map<String, List<Emp>> empListOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.toList()));
+        System.out.println(empListOnEachDept);
     }
 
     private static List<Emp> employeeBuilderWithDeparment() {

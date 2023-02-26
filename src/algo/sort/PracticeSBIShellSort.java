@@ -1,18 +1,23 @@
 package algo.sort;
 
+import java.util.Arrays;
+
 public class PracticeSBIShellSort {
+
     //bubble,selection,insertion
+
     //quick,merge,heap
+
     //count sort, redix or bucket/bin sort, shell sort , Comp sort
     public static void main(String[] args) {
         System.out.println("------------this is sorting--------");
 
         int[] arry={0,-5,-5,2,1,7,8};
-        //Arrays.stream(arry).forEach(System.out::print);
-        //bubblesort(arry);
-    /*    selectionSort(arry);
+        Arrays.stream(arry).forEach(System.out::print);
+        bubblesort(arry);
+        selectionSort(arry);
         System.out.println("");
-        Arrays.stream(arry).forEach(System.out::print);*/
+        Arrays.stream(arry).forEach(System.out::print);
         //insertsort
     }
 

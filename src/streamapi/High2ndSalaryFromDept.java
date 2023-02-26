@@ -1,9 +1,10 @@
 package streamapi;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toSet;
 
 public class High2ndSalaryFromDept {
 
@@ -30,9 +31,15 @@ public class High2ndSalaryFromDept {
 
     private static void secoundHighestSalary() {
         List<Employee> employeeList = buildEmployee();
+        //employeeList.stream().collect(Collectors.groupingBy(k->k.getDept(),Collectors.counting()));
+        System.out.println("-------");
+        //System.out.println(employeeList.stream().collect(Collectors.toMap(Function.identity(),x -> 1L, Long::sum)));
+
         //System.out.println(employeeList.stream().sorted(Comparator.comparing(Employee::getAddress,Comparator.reverseOrder())).collect(Collectors.toList()));
         //System.out.println(employeeList.stream().sorted(Comparator.comparingInt(Employee::getId)).collect(Collectors.toList()));
-        System.out.println(employeeList.stream().sorted(Comparator.comparingLong(Employee::getSalary).reversed()).skip(1).findFirst().get());
+
+        //System.out.println(employeeList.stream().sorted(Comparator.comparingLong(Employee::getSalary).reversed()).skip(1).findFirst().get());
+        //employeeList.stream().sorted(Comparator.comparingLong(Employee::getSalary).reversed()).skip(2).findFirst().get();
     }
 
     private static List<Employee> buildEmployee() {
@@ -60,7 +67,19 @@ public class High2ndSalaryFromDept {
         //System.out.println(list.stream().sorted().skip(1).().get());
     }
     private static void highestSalaryFromEachDept() {
+        List<Employee> employeeList = buildEmployee();
+        //employeeList.stream().collect(Collectors.groupingBy(Employee::getAddress,Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing())))
 
+        /* don't use it
+        Map<String, Set<Long>> salaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.mapping(Emp::getSalary, toSet())));
+        //System.out.println(salaryOnEachDept);
+        Map<String, Emp> maxSalaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingLong(Emp::getSalary)),Optional::get)));
+        //System.out.println(maxSalaryOnEachDept);
+        Map<String, Long> sumOfSalaryOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.summingLong(Emp::getSalary)));
+        Map<String, Long> countOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.counting()));
+        Map<String, List<Emp>> empListOnEachDept = empList.stream().collect(Collectors.groupingBy(Emp::getDepartName, Collectors.toList()));
+        System.out.println(empListOnEachDept);
+*/
     }
 
     private static class Employee {
@@ -109,6 +128,14 @@ public class High2ndSalaryFromDept {
 
         public void setSalary(Long salary) {
             this.salary = salary;
+        }
+
+        public String getDept() {
+            return dept;
+        }
+
+        public void setDept(String dept) {
+            this.dept = dept;
         }
 
         @Override
