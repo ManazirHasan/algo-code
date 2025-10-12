@@ -8,7 +8,7 @@ public class FutuKclass {
 
 
         FutuKclass futuKclass = new FutuKclass();
-        futuKclass.clone();
+        //futuKclass.clone();
 
 
         int[] x = {6, 2, 1, 5, 8, 9};
@@ -42,7 +42,6 @@ public class FutuKclass {
             System.out.println(j[g]);
         System.out.println(mapVal);
     }
-
 
 
 }

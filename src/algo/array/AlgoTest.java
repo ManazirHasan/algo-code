@@ -2,7 +2,7 @@ package algo.array;
 
 import java.lang.reflect.Array;
 import java.time.LocalDate;
-import java.util.*;
+import module java.base;
 
 public class AlgoTest {
 
